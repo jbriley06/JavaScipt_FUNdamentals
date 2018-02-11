@@ -1,0 +1,93 @@
+<!-- `date/time`, `city`, `state`, `country`, `shape`, and `comment`  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UFO sitings</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+     
+    
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="jumbotron text-center" id="big-box">
+            <h1>UFO Sightings</h1>
+
+        </div>
+
+    </div>
+
+    <div class= "container">
+        <div class= "row">
+            <div class="col-md-3">
+                    <div class="form-group">
+                            <input type="text" class="form-control" id="CityInput" onkeyup="myFunction()" placeholder="Filter by city..">
+                            <input type="text" class="form-control" id="StateInput" onkeyup="myFunction()" placeholder="Filter by State..">
+                            <input type="text" class="form-control" id="CountryInput" onkeyup="myFunction()" placeholder="Search for Country..">
+                            <input type="text" class="form-control" id="DateInput" onkeyup="myFunction()" placeholder="Search for Date..">
+                            <span class="input-group-btn">
+                                <!-- <button class="btn btn-search" type="button">
+                                    <i class="btn btn-primary"></i> Search</button> -->
+                                    <button type="button" class="btn btn-primary" id="searchbttn">Search</button>
+                                    <button type="button" class="btn btn-danger" id="resetbttn">Reset</button>
+                            </span>
+                        
+                        </div>
+
+
+            </div>
+        </div>
+
+    </div>
+<form>
+       
+
+</form>
+    
+
+   
+
+    <div class="search-list">
+        <!-- <input type="text" class="search" /> -->
+        <div class="section">
+            <div class="container-fluid">
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="col">Date</th>
+                                <th class="col">City</th>
+                                <th class="col">State</th>
+                                <th class="col">Country</th>
+                                <th class="col">Shape</th>
+                                <th class="col">Duration (minutes)</th>
+                                <th class="col">Comments</th>
+    
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+    
+                </div>
+            </div>
+            <ul class="pagination"></ul>
+        </div>
+
+    </div>
+
+    
+    
+    <script src="data.js"></script>
+</body>
+</html>
